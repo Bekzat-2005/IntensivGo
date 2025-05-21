@@ -8,7 +8,7 @@ type Person struct {
 }
 
 func (p Person) SayHello() {
-	fmt.Print("Hello my name is ", p.name, p.age)
+	fmt.Println("Hello my name is ", p.name, p.age)
 }
 
 func (p *Person) birthday() {
@@ -20,4 +20,5 @@ func main() {
 	p := Person{"Bekzat", 19}
 	p.SayHello()
 	p.birthday()
+	p.SayHello()
 }
